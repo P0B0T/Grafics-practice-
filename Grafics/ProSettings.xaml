@@ -1,0 +1,41 @@
+﻿<Window
+    x:Class="Grafics.ProSettings"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Grafics"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Опасные настройки"
+    Width="500"
+    Height="190"
+    Icon="/Icons and pictures/череп.png"
+    ResizeMode="NoResize"
+    Style="{StaticResource WindowBackground}"
+    WindowStartupLocation="CenterScreen"
+    mc:Ignorable="d">
+
+    <StackPanel>
+
+        <Button
+            Name="btnEditRole"
+            Width="464"
+            Margin="0,10,0,10"
+            VerticalAlignment="Top"
+            Click="btnEditRole_Click"
+            Content="Изменить статус роли для входа с правами администратора" />
+
+        <Button
+            Name="btnEditListStudents"
+            Width="256"
+            Click="btnEditListStudents_Click"
+            Content="Редактировать список студентов" />
+
+        <Button
+            Name="btnEditListUsers"
+            Width="307"
+            Click="btnEditListUsers_Click"
+            Content="Редактировать список учётных записей" />
+
+    </StackPanel>
+
+</Window>

@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <LangVersion>preview</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Icons and pictures\Авторизация.png" />
+    <None Remove="Icons and pictures\работяга.png" />
+    <None Remove="Icons and pictures\череп.png" />
+    <None Remove="Icons and pictures\шестерёнки.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Icons and pictures\Авторизация.png" />
+    <Resource Include="Icons and pictures\работяга.png" />
+    <Resource Include="Icons and pictures\череп.png" />
+    <Resource Include="Icons and pictures\шестерёнки.png" />
+  </ItemGroup>
+
+</Project>
